@@ -1,0 +1,9 @@
+{
+  "name": "neal.codes-home",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation#~5.5.1",
+    "fontawesome": "~4.3.0"
+  }
+}
