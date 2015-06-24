@@ -1,4 +1,5 @@
 'use strict';
+/* global TweenLite:false, jQuery:false */
 
 var app = (function(document, $) {
 	var _init = function() {
@@ -47,43 +48,40 @@ var app = (function(document, $) {
     }
   });
 
-  $.jGFeed('http://codepen.io/nealfennimore/popular/feed/', function(feed){
-    var regex = /src=\"(.*)\"/;
+  $.jGFeed('http://neal.codes/blog/rss/&num=5', function(feed){
+    var $documentFragment = $(document.createDocumentFragment()),
+        $blogList = $('.blog__list');
 
-    function constructPen (el){
+    function constructPost (el){
       var title   = el.title,
-          link    = el.link,
-          imgLink = regex.exec(el.content)[1];
+          link    = el.link;
 
-      var codepen = $('<li class="codepen">' +
-                        '<a class="codepen__link" href="' + link + '">' +
-                          '<img class="codepen__image" src="' + imgLink + '">' +
+      var post = $('<li class="blog__list__post animated fadeInLeft">' +
+                        '<a href="' + link + '">' +
                            title +
                         '</a>' +
                      '</li>'
                     );
 
-      return codepen;
+      return post;
     }
 
-    var $ul = $('<ul>', {class: 'codepens__column__container'});
-
-    feed.entries.forEach(function(el, index){
-      $ul.append( constructPen(el) );
+    feed.entries.forEach(function(el){
+      $documentFragment.append( constructPost(el) );
     });
 
-    $('.codepens__column').append($ul);
+    $blogList.append($documentFragment);
 
   });
 
   var skillBars = $('.skill-bar');
-    skillBars.on("mouseover", function(event) {
+    skillBars.on('mouseover', function(event) {
       this.classList.remove('fadeInLeft');
       TweenLite.killTweensOf(this);
       TweenLite.to(this, 0.25, {css:'transform: translateX(10%)', ease:Power3.easeOut});
     });
 
-    skillBars.on("mouseleave", function(event) {
+    skillBars.on('mouseleave', function(event) {
       TweenLite.killTweensOf(this);
       TweenLite.to(this, 0.25, {css:'transform: translateX(0%)', ease:Power3.easeOut});
     });
