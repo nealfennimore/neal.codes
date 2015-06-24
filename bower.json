@@ -8,7 +8,7 @@
   },
   "overrides": {
     "greensock-js": {
-      "main": "**/TweenLite.min.js"
+      "main": "**/TweenMax.min.js"
     }
   }
 }
