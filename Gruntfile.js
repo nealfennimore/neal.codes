@@ -138,8 +138,10 @@ module.exports = function(grunt) {
 				exclude: [
 					'modernizr',
 					'font-awesome',
-					'jquery-placeholder'//,
-					// 'foundation'
+					'jquery-placeholder',
+					'foundation',
+					'fastclick',
+					'jquery.cookie'
 				]
 			}
 		}
