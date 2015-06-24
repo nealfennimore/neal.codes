@@ -2,3 +2,4 @@ node_modules
 .sass-cache
 sftp-config.json
 bower_components
+.tmp
