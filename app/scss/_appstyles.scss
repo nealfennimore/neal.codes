@@ -1,0 +1,347 @@
+/* all app scss styles here */
+
+@import "compass/css3";
+@import "compass/utilities";
+
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url('../fonts/Nexa Bold-webfont.eot');
+    src: url('../fonts/Nexa Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Nexa Bold-webfont.woff2') format('woff2'),
+         url('../fonts/Nexa Bold-webfont.woff') format('woff'),
+         url('../fonts/Nexa Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Nexa Bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Nexa Light';
+    src: url('../fonts/Nexa Light-webfont.eot');
+    src: url('../fonts/Nexa Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Nexa Light-webfont.woff2') format('woff2'),
+         url('../fonts/Nexa Light-webfont.woff') format('woff'),
+         url('../fonts/Nexa Light-webfont.ttf') format('truetype'),
+         url('../fonts/Nexa Light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@mixin child-delay($n) {
+  &:nth-child(#{$n}){
+    -webkit-animation-delay: 0.25s * $n;
+    animation-delay: 0.25s * $n;
+  }
+}
+
+@mixin width-bar($n) {
+  &.width-#{$n} {
+    width: ($n * 8) * 1%;
+    padding-left: ($n * 8) * 1%;
+  }
+}
+
+%preserve-3d {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.valign-middle {
+    display: table;
+
+    > .columns {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    > .columns, > [class*="column"] + [class*="column"]:last-child {
+        float: none;
+    }
+}
+
+
+body {
+ -webkit-backface-visibility: hidden; // Addresses a small issue in webkit: http://bit.ly/NEdoDq
+}
+.animated {
+ @include animate-prefixer(animation-duration, $base-duration);
+ @include animate-prefixer(animation-fill-mode, both);
+
+  &.fadeInDown {
+    @include animate-prefixer(animation-duration, $base-duration * 3);
+  }
+  &.bounceInLeft {
+    @include animate-prefixer(animation-duration, $base-duration * 3);
+  }
+}
+
+
+.row {
+  &.full-width {
+    max-width: 100%;
+    .row {
+      max-width: 62.5rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+header {
+  padding: rem-calc(50) 0 rem-calc(100);
+}
+
+section {
+  padding: rem-calc(100) 0;
+}
+
+
+section.summary,
+section.connect {
+  background-color: $color-4;
+  border-radius: $global-radius;
+}
+
+.header {
+  &__container {
+    position: relative;
+    width: 25rem;
+    height: 100%;
+
+    &__bottom-left {
+      position: relative;
+      top: rem-calc(80);
+      left: rem-calc(53);
+      max-width: 7rem;
+    }
+    &__logo {
+      border-radius: 50%;
+      position: relative;
+      left: rem-calc(10);
+      top: rem-calc(-9);
+    }
+    &__top-right {
+      position: relative;
+      top: rem-calc(-10);
+      right: rem-calc(9);
+      max-width: 6rem;
+    }
+  }
+
+  &__name {
+    font-family: $font-family-sans-serif;
+    padding-left: 15%;
+    margin-bottom: rem-calc(12);
+  }
+
+  &__title {
+    padding-left: 30%;
+    margin-top: rem-calc(12);
+  }
+
+  hr {
+    border-color: rgba($color-4, 0.6);
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .connect__list__container {
+    position: relative;
+    top: rem-calc(63);
+  }
+}
+
+$elements: 10;
+.summary {
+  &__title {
+    margin-top: 0;
+  }
+  &__skill-bars {
+    overflow: hidden;
+    ul {
+      list-style-type: none;
+      margin: 0;
+
+      .skill-bar {
+        background: $color-1;
+        @include background-image(linear-gradient(to right, #006666, #008584));
+        margin: 4.5% 0;
+        font-size: 0.8em;
+        line-height: 1.2em;
+        border-radius: 0 $global-radius $global-radius 0;
+        color: $color-2;
+
+        span {
+          padding-left: 0.5em;
+          white-space: nowrap;
+        }
+
+        @for $i from 0 to $elements + 1 {
+          @include width-bar($i);
+          @include child-delay($i);
+        }
+
+      }
+    }
+  }
+}
+
+
+.projects {
+  &__title {
+    margin-top: 0;
+  }
+
+  &__project {
+    border-radius: $global-radius;
+    transition: transform 0.1s;
+    text-align: center;
+
+    // a {
+    //   padding-top: rem-calc(10);
+    //   color: $color-2;
+    //   opacity: 0;
+    //   transition: all 0.25;
+    // }
+
+    &:hover {
+      transition: transform 0.15s;
+      transform: translateY(-2%);
+
+      // a {
+      //   opacity: 1;
+      //   transform: translateY(4%);
+      //   transition: all 0.15s;
+      // }
+    }
+
+    img {
+      border: 1px solid $color-4;
+      border-radius: $global-radius;
+      cursor: pointer;
+    }
+  }
+}
+
+.connect {
+  &__list {
+    list-style-type: none;
+
+    &__item {
+      text-align: center;
+      a {
+        transition: color 0.25s;
+        color: $color-3;
+        i {
+          display: block;
+        }
+      }
+
+      &:hover {
+        a {
+          transition: color 1s;
+          color: $color-2;
+
+        }
+      }
+    }
+
+
+
+  }
+}
+
+.codepens {
+  &__column {
+    &__container {
+      list-style-type: none;
+
+      .codepen {
+        text-align: center;
+        max-width: 24.5%;
+        display: inline-block;
+
+        &__image {
+          margin-bottom: rem-calc(10);
+        }
+
+        &__link {
+          color: $color-2;
+        }
+      }
+
+    }
+  }
+}
+
+@media #{$medium-only} {
+  .header {
+    &__container {
+      width: 19rem;
+      &__bottom-left {
+      }
+      &__logo {
+      }
+      &__top-right {
+      }
+
+    }
+
+
+
+    text-align: center;
+    &__name {
+      padding-left: 0;
+    }
+    &__title {
+      padding-left: 0;
+    }
+  }
+
+  .summary {
+    &__skill-bars {
+      ul {
+        .skill-bar {
+          margin: 6.5% 0;
+        }
+      }
+    }
+  }
+}
+
+@media #{$small-only} {
+  section {
+    padding: rem-calc(45) 0;
+  }
+
+  .header {
+    text-align: center;
+    &__name {
+      padding-left: 0;
+    }
+    &__title {
+      padding-left: 0;
+    }
+  }
+
+
+  .projects__project-1 {
+    margin-bottom: 5%;
+  }
+
+  .connect__chameleon {
+    margin-top: 5%;
+  }
+
+}

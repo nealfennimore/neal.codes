@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 107 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>Bottom-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-129.644306%" y1="-123.452523%" x2="-233.303988%" y2="21.9986972%" id="linearGradient-1">
+            <stop stop-color="#006666" offset="0%"></stop>
+            <stop stop-color="#002B2B" offset="58.4576254%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-129.644306%" y1="29.9161116%" x2="-233.303988%" y2="46.7577581%" id="linearGradient-2">
+            <stop stop-color="#006666" offset="0%"></stop>
+            <stop stop-color="#002B2B" offset="58.4576254%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="47.4276256%" y1="-123.452524%" x2="45.9432951%" y2="21.998697%" id="linearGradient-3">
+            <stop stop-color="#006666" offset="0%"></stop>
+            <stop stop-color="#002B2B" offset="58.4576254%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-4.52078128%" y1="-123.452524%" x2="-35.9807643%" y2="21.998697%" id="linearGradient-4">
+            <stop stop-color="#006666" offset="0%"></stop>
+            <stop stop-color="#002B2B" offset="58.4576254%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="45.9292523%" y1="-150.866818%" x2="54.7467696%" y2="976.523504%" id="linearGradient-5">
+            <stop stop-color="#006666" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-57.8408647%" y1="-150.866818%" x2="175.749807%" y2="976.523504%" id="linearGradient-6">
+            <stop stop-color="#006666" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-115.213851%" y1="-150.866817%" x2="242.650623%" y2="976.523499%" id="linearGradient-7">
+            <stop stop-color="#006666" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-106.83005%" y1="-150.866818%" x2="232.874538%" y2="976.523504%" id="linearGradient-8">
+            <stop stop-color="#006666" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-177.59642%" y1="187.499135%" x2="-17.5696073%" y2="-95.3831726%" id="linearGradient-9">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#006666" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-178.781069%" y1="187.499135%" x2="-17.9213099%" y2="-95.3831726%" id="linearGradient-10">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#006666" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-178.781069%" y1="112.275818%" x2="-17.9213099%" y2="-15.8466393%" id="linearGradient-11">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#006666" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-254.000000, -144.000000)" stroke-width="0.5" stroke="#008584">
+            <g id="section-1" sketch:type="MSLayerGroup" transform="translate(254.000000, 7.000000)">
+                <g id="Face-holder" transform="translate(0.000000, 64.000000)" sketch:type="MSShapeGroup">
+                    <g id="Page-1">
+                        <g id="Face-holder">
+                            <g id="Bottom-left" transform="translate(0.000000, 73.509225)">
+                                <g id="dark-1" transform="translate(0.000000, 27.291513)">
+                                    <path class="triangle" d="M14.2511364,4.05859263 L24.4329546,24.3685557 L4.0693182,24.3685557 L14.2511364,4.05859263 L14.2511364,4.05859263 Z" id="triangle-1" fill="url(#linearGradient-1)" transform="translate(14.251136, 14.213574) rotate(116.000000) translate(-14.251136, -14.213574) "></path>
+                                    <path class="triangle" d="M14.7616656,10.1897117 L21.4434838,33.0384202 L8.07984745,33.0384202 L14.7616656,10.1897117 L14.7616656,10.1897117 Z" id="triangle-2" fill="url(#linearGradient-2)" transform="translate(14.761666, 21.614066) rotate(-74.000000) translate(-14.761666, -21.614066) "></path>
+                                    <path class="triangle" d="M69.6786565,28.3367052 L89.0877474,41.6651185 L50.2695654,41.6651185 L69.6786565,28.3367052 L69.6786565,28.3367052 Z" id="triangle-3" fill="url(#linearGradient-3)" transform="translate(69.678656, 35.000912) rotate(115.000000) translate(-69.678656, -35.000912) "></path>
+                                    <path class="triangle" d="M29.8052276,30.263837 L46.0325004,54.3819182 L13.577955,54.3819182 L29.8052276,30.263837 L29.8052276,30.263837 Z" id="triangle-4" fill="url(#linearGradient-4)" transform="translate(29.805228, 42.322878) rotate(219.000000) translate(-29.805228, -42.322878) "></path>
+                                </g>
+                                <g id="medium-1" transform="translate(24.181818, 0.000000)">
+                                    <path class="triangle" d="M55.1722205,67.7150832 L67.8994929,77.8700648 L42.4449474,77.8700648 L55.1722205,67.7150832 L55.1722205,67.7150832 Z" id="triangle-5" fill="url(#linearGradient-5)" transform="translate(55.172220, 72.792574) rotate(96.000000) translate(-55.172220, -72.792574) "></path>
+                                    <path class="triangle" d="M71.2361701,60.4150331 L83.3270792,81.9943687 L59.1452607,81.9943687 L71.2361701,60.4150331 L71.2361701,60.4150331 Z" id="triangle-6" fill="url(#linearGradient-6)" transform="translate(71.236170, 71.204701) rotate(7.000000) translate(-71.236170, -71.204701) "></path>
+                                    <path class="triangle" d="M51.5557797,47.6186982 L64.2830522,73.006152 L38.8285069,73.006152 L51.5557797,47.6186982 L51.5557797,47.6186982 Z" id="triangle-7" fill="url(#linearGradient-7)" transform="translate(51.555780, 60.312425) rotate(118.000000) translate(-51.555780, -60.312425) "></path>
+                                    <path class="triangle" d="M23.2272727,0 L46.4545455,45.697417 L0,45.697417 L23.2272727,0 L23.2272727,0 Z" id="triangle-8" fill="url(#linearGradient-8)"></path>
+                                </g>
+                                <g id="light-1" transform="translate(8.909091, 14.597786)">
+                                    <path class="triangle" d="M31.2696023,18.1158679 L54.1786932,63.8132847 L8.3605114,63.8132847 L31.2696023,18.1158679 L31.2696023,18.1158679 Z" id="triangle-9" fill="url(#linearGradient-9)" transform="translate(31.269602, 40.964576) rotate(-64.000000) translate(-31.269602, -40.964576) "></path>
+                                    <path class="triangle" d="M16.8686534,4.44780858 L28.005017,26.6618307 L5.73228979,26.6618307 L16.8686534,4.44780858 L16.8686534,4.44780858 Z" id="triangle-10" fill="url(#linearGradient-10)" transform="translate(16.868653, 15.554820) rotate(53.000000) translate(-16.868653, -15.554820) "></path>
+                                    <path class="triangle" d="M77.2688099,28.5832337 L93.1779002,67.2991005 L61.3597185,67.2991005 L77.2688099,28.5832337 L77.2688099,28.5832337 Z" id="triangle-11" fill="url(#linearGradient-11)" transform="translate(77.268809, 47.941167) rotate(193.000000) translate(-77.268809, -47.941167) "></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

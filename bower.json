@@ -1,9 +1,8 @@
 {
-  "name": "neal.codes-home",
-  "version": "0.0.1",
-  "private": "true",
+  "name": "zf5_project",
   "dependencies": {
-    "foundation": "zurb/bower-foundation#~5.5.1",
-    "fontawesome": "~4.3.0"
+    "foundation": "zurb/bower-foundation",
+    "font-awesome": "~4.3.0",
+    "animate-sass": "~0.6.3"
   }
 }
