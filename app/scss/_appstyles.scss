@@ -108,7 +108,7 @@ section {
 
 
 section.summary,
-section.connect {
+section.blog {
   background-color: $color-4;
   border-radius: $global-radius;
 }
@@ -256,9 +256,24 @@ $elements: 10;
         }
       }
     }
+  }
+}
 
+.blog {
+  &__list {
+    color: $color-2;
+    // list-style-type: circle;
 
-
+    &__post {
+      margin-bottom: rem-calc(5);
+      a {
+        color: $luna;
+        &:hover {
+          transition: color 1s;
+          color: $color-1;
+        }
+      }
+    }
   }
 }
 
