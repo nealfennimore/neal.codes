@@ -3,6 +3,12 @@
   "dependencies": {
     "foundation": "zurb/bower-foundation",
     "font-awesome": "~4.3.0",
-    "animate-sass": "~0.6.3"
+    "animate-sass": "~0.6.3",
+    "greensock-js": "~1.10.2"
+  },
+  "overrides": {
+    "greensock-js": {
+      "main": "**/TweenLite.min.js"
+    }
   }
 }
